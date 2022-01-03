@@ -10,7 +10,7 @@ using System.ComponentModel;
 
 namespace Chillin
 {
-  public class PluginConfig : IConfig
+  public class Config : IConfig
   {
     public bool IsEnabled { get; set; } = true;
 

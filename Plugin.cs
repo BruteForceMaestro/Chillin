@@ -12,7 +12,7 @@ using Server = Exiled.Events.Handlers.Server;
 
 namespace Chillin
 {
-  public class Plugin : Plugin<PluginConfig>
+  public class Plugin : Plugin<Config>
   {
     private EventHandlers _handlers;
 
@@ -34,6 +34,7 @@ namespace Chillin
     public override void OnEnabled()
     {
       base.OnEnabled();
+      Instance = this;
       EventHandler = new EventHandlers();
       // ISSUE: method pointer
       Server.RoundEnded += EventHandler.OnRoundEnd;

@@ -84,7 +84,7 @@
     <Compile Include="Coords.cs" />
     <Compile Include="EventHandlers.cs" />
     <Compile Include="Plugin.cs" />
-    <Compile Include="PluginConfig.cs" />
+    <Compile Include="Config.cs" />
     <Compile Include="AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
